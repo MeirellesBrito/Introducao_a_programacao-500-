@@ -126,6 +126,139 @@ import math
 logaritmo = math.log(num) / math.log(base)
 print("O logaritmo deb",num,"bna baseb",base,"be:b",logaritmo)"""
 
+#algoritmo 45 Entrar com um número e imprimir a seguinte saída:
+"""num = float(input("DIgite um numero: "))
+import math
+quad = num **2
+raizqiad = math.pow(num,1/2) #http://www.bosontreinamentos.com.br/programacao-em-python/como-calcular-a-raiz-quadrada-de-um-numero-em-python/
+print("numero: ",num)
+print("quadrado: ",quad)
+print("raiz quadrada: ",raizqiad)"""
+
+#algoritmo 46 Fazer um algoritmo que possa entrar com o saldo de uma aplicação e imprima o  novo saldo, considerando o reajuste de 1%.
+"""saldo = float(input("Digite Saldo: "))
+print("Novo Saldo: ", saldo * 1.50) # 1% = 1.02| 5%=1.05 | 50%= 1.50"""
+
+#algoritmo 47 Entrar com um número no formato CDU e imprimir invertido: UDC. (Exemplo: 123, sairá 321.) O número deverá ser armazenado em outra variável antes de ser impresso.
+"""num = int(input("entre com um numero de 3 digitos: "))
+c = num / 100
+d = num % 100 / 10
+u = num % 10
+print("Numero: ",num)
+print("invertido: ",int(u*100 + d*10 + c)) #erro no (c)"""
+
+#algoritmo 48 Antes de o racionamento de energia ser decretado, quase ninguém falava em quilowatts; mas, agora, todos incorporaram essa palavra em seu vocabulário.
+# Sabendo-se que 100 quilowatts de energia custa um sétimo do salário mínimo, fazer um algoritmo que receba o valor do salário mínimo e a quantidade de quilo watts gasta por uma residência e calcule. Imprima: 
+real = float(input("Entre com o salario minimo: "))
+qtdade = float(input("entre com a quantidade em quilowatt: "))
+# divide por 7 para achar o preço de 100 Kw e por 100 para achar de 1 Kw
+preco = real / 700
+vp = preco * qtdade
+vd = vp * 0.9
+print("preco do quilowatt:" , preco, " valor a ser pago:",vp," valor com desconto: ", vd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

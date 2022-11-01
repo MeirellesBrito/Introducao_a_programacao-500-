@@ -237,13 +237,98 @@ print("MEdia trucada = ",float(mf - 0.5)+0.001)
 print("Media arredondada =",int(mf+0.001))"""
 
 
+#algoritmo 299 Os alunos de informática tiveram cinco provas: 1, 2, 3, 4 e 5. Criar um algoritmo que imprima:
+"""
+Nome dos que foram aprovados em todas as matérias;
+Nome dos alunos aprovados nas matérias 1 e 4;
+A porcentagem dos aprovados na matéria 3."""
+"""x = 0
+qa = int(input("Digite a quantidade de alunos: "))  
+cont = 0
+while(x < qa):
+    nome = input("Digite o Nome ")
+    n1 = float(input("[Digite a nota na prova 1]: "))
+    n2 = float(input("[Digite a nota na prova 2]: "))
+    n3 = float(input("[Digite a nota na prova 3]: "))
+    n4 = float(input("[Digite a nota na prova 4]: "))
+    n5 = float(input("[Digite a nota na prova 5]: "))
+    if(n1 >=7.0 and n4 >=7.0):
+        if(n2 >=7.0 and n3 >= 7.0 and n5 >=7.0):
+            print("Parabens! ", nome, " voce foi aprovado em todas as materias!")
+        else:
+            print( nome, " voce passou nas materias 1 e 4;")
+    if(n3 >= 7.0):
+        cont+=1
+    x+=1    
+print("\nporcentagem dos aprovados na materia 3 : ",(cont*100)/qa)""" 
 
+#algoritmo 300 Uma pesquisa de opinião realizada no Rio de Janeiro, teve as seguintes perguntas:
+"""Qual seu time de coração?
+1-Fluminense;
+2-Botafogo;
+3-Vasco;
+4-Flamengo;
+5-Outros
+Onde você mora?
+1-RJ;
+2-Niterói;
+3-Outros;
+Qual o seu salário?
+Criar um algoritmo que imprima:
+o número de torcedores por clube;
+m a média salarial dos torcedores do Botafogo;
+m o número de pessoas moradoras do Rio de Janeiro, torcedores de outros
+clubes;
+o número de pessoas de Niterói torcedoras do Fluminense; """
+"""from turtle import back
+op = 0
+x = 0
+contflu = 0
+contflu2 = 0
+contbot = 0
+msal = 0
+contvas = 0
+contfla = 0
+contout2 = 0
 
+while x < 50 :
+    op = int(input("Digite [1-FLU] || [2-BOTA] || [3-VASCO] || [4-FLA] || [5-Outros] || [0-SAIR]  ")) 
+    if( op == 0 ):
+        break
+    if( op != 0 ):
+        x += 1
+        if(op >1 or op<5  ):
+            if( op == 1):
+                contflu += 1
+            if(op == 2):
+                contbot += 1                          
+            if(op == 3):
+                contvas += 1
+            if(op==4):
+                contfla += 1
+            if(op==5):
+                contout2 += 1   
+            op2 = int(input("Onde voce mora [1-RJ] [2-Niteroi] [3-Outros] "))
+            if(op2 == 2):
+                contflu2 += 1   
+            sal = float(input("Qual o seu salario? "))     
+msal += sal
+print("Total de torcedores do Fluminense :", contflu)
+print("Total de torcedores do Botafogo :", contbot)
+print("Total de torcedores do Vasco :", contvas)
+print("Total de torcedores do Flamengo :", contfla)
+print("Total de torcedores de outros clubes :", contout2)
+if(contbot != 0):
+    print("Media salarial dos torcedores do Botafogo: ",float(msal/contbot))
+else:
+    print("Nenhum torcedor do Botafogo")
+    print("\nTotal de pessoas do Rio de Janeiro torcedores de outros clubes :",contout2)
+    print("\nTotal de pessoas de Niteroi torcedores do Fluminense: ", contflu2) """               
+            
+            
+                
 
-
-
-
-
+               
 
 
 

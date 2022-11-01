@@ -236,6 +236,31 @@ mf= (pr1 + pr2)/2
 print("MEdia trucada = ",float(mf - 0.5)+0.001)
 print("Media arredondada =",int(mf+0.001))"""
 
+#algoritmo 298 Repare a seguinte característica do numero 3025 30 + 25 = 55 e 552 = 3025
+"""Criar um algoritmo que possa ler vários números inteiros de 4 algarismos, um de
+cada vez, e diga se o número apresenta a mesma característica (repare que 3025/
+100=30 com resto 25). O algoritmo termina quando for lido um valor menor que 1.000 ou maior que 9999."""
+num = int(input("Entre com um numero de 4 algarismo: "))
+while ( num > 999 and num < 10000):
+    dc = num / 100
+    du = num % 100
+    q = ( dc + du )**2
+    if(q == num):
+        print("Possui a caracteristica: ")
+    else:
+        print("Nao possui a caracteristica: ")
+        num = int(input("Entre com um numero de 4 algarismo: "))
+
+
+
+    
+
+
+
+
+
+
+
 
 #algoritmo 299 Os alunos de informática tiveram cinco provas: 1, 2, 3, 4 e 5. Criar um algoritmo que imprima:
 """

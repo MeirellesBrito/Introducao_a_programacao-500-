@@ -149,107 +149,92 @@ print("invertido: ",int(u*100 + d*10 + c)) #erro no (c)"""
 
 #algoritmo 48 Antes de o racionamento de energia ser decretado, quase ninguém falava em quilowatts; mas, agora, todos incorporaram essa palavra em seu vocabulário.
 # Sabendo-se que 100 quilowatts de energia custa um sétimo do salário mínimo, fazer um algoritmo que receba o valor do salário mínimo e a quantidade de quilo watts gasta por uma residência e calcule. Imprima: 
-real = float(input("Entre com o salario minimo: "))
+"""real = float(input("Entre com o salario minimo: "))
 qtdade = float(input("entre com a quantidade em quilowatt: "))
 # divide por 7 para achar o preço de 100 Kw e por 100 para achar de 1 Kw
 preco = real / 700
 vp = preco * qtdade
 vd = vp * 0.9
-print("preco do quilowatt:" , preco, " valor a ser pago:",vp," valor com desconto: ", vd)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("preco do quilowatt:" , preco, " valor a ser pago:",vp," valor com desconto: ", vd)"""
+
+#algoritmo 49 Entrar com um nome e imprimir
+"""todo nome: 
+primeiro caractere: 
+ultimo caractere: 
+do primeiro ate o terceiro: 
+quarto caractere: 
+todos menos o primeiro: 
+os dois ultimos:"""
+"""nome = str(input("entre com o nome: "))
+print("todo nome: ",nome)
+print("Primeiro caractere",nome[0])
+print("ultimo caractere: ",nome[-1])
+print("primeiro ao terceiro caractere: ",nome[0:3])
+print("quarto caracter: ",nome[3])
+print("todos menos o primeiro: ",nome[1:])
+print("os dois ultimos: ",nome[-2:])"""
+
+#algoritmo 50 Entrar com a base e a altura de um retângulo e imprimir a seguinte saída: perimetro area diagonal: 
+"""base = float(input("DIgite base: "))
+altura = float(input("Digite altura: "))
+import math
+perimetro = 2*(base + altura)
+area = base*altura
+diagonal = math.pow(base**2 + altura**2 , 1/2)
+print("perimetro = ", perimetro)
+print("area = ", area)
+print("diagonal = ",diagonal)"""
+
+#algoritmo 51 Entrar com o raio de um cfrculo e imprimir a seguinte saída: peri metro: area:
+"""import math
+raio = float(input("Digite raio :"))
+perimetro = 2* math.pi*math.pow(raio, 1/2)
+area = math.pi*math.pow(raio, 1/2) **2
+print("perimetro: ", perimetro)
+print("area: ",area)"""
+
+#algoritmo 52 Entrar com o lado de um quadrado e imprimir: peri metro: area: diagonal: 
+"""import math
+lado = float(input("Digite o lado do quadrado: "))
+perimetro = 4 * lado
+area = lado ** 2
+diagonal = lado * math.pow(2,1/2)
+print("Perimetro: ",perimetro)
+print("Area: ",area)
+print("diagonal: ",diagonal)"""
+
+#algoritmo 53 Entrar com os lados a, b, c de um paralelepípedo. Calcular e imprimir a diagonal.
+"""import math
+a = float(input("Entre com a base: "))
+b = float(input("entre com a altura: "))
+c = float(input("Entre com a profundidade: "))
+diagonal = math.pow(a**2 + b**2 + c**2, 1/2)
+print("diagonal: ",diagonal)"""
+
+#algoritmo 54 Criar um algoritmo que calcule e imprima a área de um triângulo.
+"""a = float(input("Entre com a base: "))
+b = float(input("Entre com a altura de um triangulo: "))
+print("Area =",(a*b)/2)"""
+
+#algoritmo 55 Criar um algoritmo que calcule e imprima a área de um losango. 
+"""diagmaior = float(input("media da diagonal maior: "))
+diagmenor = float(input("Medida da diagonal menor: "))
+area = (diagmaior * diagmenor)/2
+print("Area = ",area)"""
+
+#algoritmo 56 entrar com nome e idade. imprimir a seguinte saida: nome , idade:
+"""nome = str(input("DIgite o nome: "))
+idade = int(input("Diite a idade: "))
+print("")
+print("nome =",nome)
+print("Idade = ",idade)"""
+
+#algoritmo 57 Entrar com as notas da PR 1 e PR2 e imprimir a média final: truncada: arredondada: 
+"""pr1 = float(input("Digite a pr1: "))
+pr2 = float(input("Digite a pr2: "))
+mf= (pr1 + pr2)/2
+print("MEdia trucada = ",float(mf - 0.5)+0.001)
+print("Media arredondada =",int(mf+0.001))"""
 
 
 

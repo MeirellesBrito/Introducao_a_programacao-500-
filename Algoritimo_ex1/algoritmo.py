@@ -236,31 +236,163 @@ mf= (pr1 + pr2)/2
 print("MEdia trucada = ",float(mf - 0.5)+0.001)
 print("Media arredondada =",int(mf+0.001))"""
 
-#algoritmo 298 Repare a seguinte característica do numero 3025 30 + 25 = 55 e 552 = 3025
-"""Criar um algoritmo que possa ler vários números inteiros de 4 algarismos, um de
-cada vez, e diga se o número apresenta a mesma característica (repare que 3025/
-100=30 com resto 25). O algoritmo termina quando for lido um valor menor que 1.000 ou maior que 9999."""
-num = int(input("Entre com um numero de 4 algarismo: "))
-while ( num > 999 and num < 10000):
-    dc = num / 100
-    du = num % 100
-    q = ( dc + du )**2
-    if(q == num):
-        print("Possui a caracteristica: ")
+#algoritmo 75 Criar um algoritmo que leia o peso de uma pessoa, só a parte inteira, calcular e
+"""imprimir:
+o peso da pessoa em gramas
+novo peso em gramas se a pessoa engordar 12%"""
+"""peso = int(input("entre com seu peso, só a parte inteira: "))
+pesogramas = peso *1000
+novopeso = pesogramas*1.12
+print("\nPeso em gramas: ",pesogramas)
+print("Novo peso: ",novopeso)"""
+
+#algoritmo 76 Criar um algoritmo que leia um número entre O e 60 e imprimir o seu sucessor, sabendo
+# que o sucessor de 60 é 0. Não pode ser utilizado nenhum comando de seleção e nem de repetição.
+"""num = float(input("Digite numero: "))
+print("sucessor: ",(num+1) %61)"""
+
+#algoritmo 77 Ler dois números reais e imprimir o quadrado da diferença do primeiro valor pelo segundo e a diferença dos quadrados.
+"""a = float(input("Digite 1 numero: "))
+b = float(input("Digite 2 numero: "))
+d=(a-b)**2
+q =a**2 - b**2
+print("\no quadrado da diferenca =",d ,"\ndiferenca dos quadrados =", q)"""
+
+#algoritmo 78 Dado um polígono convexo de n lados, podemos calcular o número de diagonais
+# diferentes (nd) desse polígono pela fórmula : nd = n (n —3)! 2. Fazer um algoritmo 
+# que leia quantos lados tem o polígono, calcule e escreva o número de diagonais 
+# diferentes (nd) do mesmo. 
+"""n = int(input("Digite o numero de lado do poligono: "))
+nd = n * (n - 3)/2
+print("Numero de diagonais: ",nd)"""
+
+#algoritmo 79 Uma pessoa resolveu fazer uma aplicação em uma poupança programada. Para calcular seu rendimento, ela deverá fornecer o valor constante da aplicação mensal, 
+# ataxa e o número de meses. Sabendo-se que a fórmula usada para este cálculo é:
+"""p = float(input("DIgiteo valor da aplocacao: "))
+i = float(input("DIgite a taxa (0-1 ): "))
+n = int(input("Digite o numero de meses: "))
+va = p * (((1+i)**n)-1)/i
+print("O valor acumulado e: ",va)"""
+
+#algoritmo 80 Criar um algoritmo que leia a quantidade de fitas que uma locadora de vídeo possui e o valor que ela cobra por cada aluguel, mostrando as informações pedidas a seguir:
+""" Sabendo que um terço das fitas são alugadas por mês, exiba o
+faturamento anual da locadora;
+Quando o cliente atrasa a entrega, é cobrada uma multa de 10% sobre o
+valor do aluguel. Sabendo que um décimo das fitas alugadas no mês são
+devolvidas com atraso, calcule o valor ganho com multas por mês;
+Sabendo ainda que 2% de fitas se estragam ao longo do ano, e um décimo
+do total é comprado para reposição, exiba a quantidade de fitas que a locadora
+terá no final do ano."""
+"""quant = int(input("DIgite a quantidade de fitas: "))
+valAluguel = float(input("Digite o valor do aluguel: "))
+fatAnual = quant/3 * valAluguel*2
+print("\n Faturamento anual: ",fatAnual)
+multas=valAluguel*0.1*(quant/3)/10 
+print("\n Multa mensais: ",multas)
+quantFinal = quant - quant *0.02 + quant/10; #quant * 1.08
+print("\n Quantidade fitas no final do ano: ",quantFinal)"""
+
+#algoritmo 81 Criar um algoritmo que, dado um número de conta corrente com três dígitos, retorne o seu dígito verificador, o qual é calculado da seguinte maneira:
+"""conta = int(input("Digite conta de tresdigitos: "))
+d1 = conta /100
+d2 = conta %100 / 10
+d3 = conta % 100 % 10
+inv = d3 *100 + d2 *10 +d1
+soma = conta + inv
+d1= (soma / 100)*1
+d2 = (soma % 100 /10)*2
+d3 = (soma %100 %10)*3
+#print("02* teste d1",int(d1),"teste d2",int(d2),"teste d3",int(d3))
+#print("teste: ",int(d1+d2+d3))
+digito= int((d1+d2+d3)%10)
+print("\nDigito verificador: ",int(digito))"""
+
+#algoritmo 83 Ler um número e, se ele for positivo, imprimir seu inverso; caso contrário, imprimir o valor absoluto do número.
+"""numero = float(input("Digite numro: "))
+if(numero > 0):
+    print("invalido: ",1/ numero)
+else:
+    print("absoluto: ",numero * (-1))
+    print("absoluto: ",numero)"""
+
+#algoritmo 84 Ler um número e imprimir se ele é par ou ímpar.
+"""a = int(input("Digite o numero: "))
+if (a % 2 ==0):
+    print("Numero PAR") 
+else:
+    print("Numero IMPAR") """  
+
+#algoritmo 85 Muitas vezes, em algumas aplicações, sentiremos a necessidade de tomar
+#outras decisões dentro de uma das alternativas da estrutura do se; a isso
+#chamamos de ses aninhados. Vejamos um exemplo clássico de algoritmos:
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if(a > b):
+    if(a >c):
+        max=a
     else:
-        print("Nao possui a caracteristica: ")
-        num = int(input("Entre com um numero de 4 algarismo: "))
+        max=c
+else:
+    if (b>c):
+        max=b
+    else:
+        max = c
+print("\n",max)"""
 
+#algoritmo 86 Ler um número e imprimir se ele é positivo, negativo ou nulo.
+"""num = float(input("Digite numero: "))
+if(num > 0):
+    print("POSITIVO")
+else:
+    if (num<0):
+        print("NEGATIVO")
+    else:
+        print("NULO")"""
 
+#algoritmo 87
+"""resp = input("Qual a capital do Brasil? ")
+if (resp == "BRASÍLIA" or resp == "Brasília"):
+    print("PARABÉNS")
+else:
+    if(resp== "brasília" or resp=="BRASÍLIA" or resp=="Brazilia" or resp=="brazilia"):
+        print("\nCERTO! Mas atenção para grafia: Brasília ou BRASÍLIA")
+    else:
+        print("ERRADO! estude mais!")"""
 
-    
-
-
-
-
-
-
-
+#algoritmo 298 Numa universidade, os alunos das turmas de informática fizeram uma prova de
+"""algoritmos. Cada turma possui um número de alunos. Criar um algoritmo que im-prima:
+ quantidade de alunos aprovados;
+média de cada turma;
+percentual de reprovados."""
+"""a = 1 ;contap = 0; total = 0; x=0; r=0; apor=0
+nt = int(input("digite o numero de turmas "))
+while(a <= nt):
+    sn = 0
+    print("digite o numero de aluno da turma",a)
+    na = int(input(":"))
+    print("teste0 [",contap,"]")
+    total += na
+    print("teste1 [",contap,"]")
+    x=1
+    while(x <= na):
+        print("Digite a nota do aluno da turma",x)
+        nota = float(input(":"))
+        if(nota >= 7.0):
+            apor += 1
+            contap += 1
+            sn += nota
+            x+=1
+        print("teste2 [",contap,"]")
+        if(nota < 7.0):
+            contap += 1
+            sn += nota
+            x+=1
+            r+=1
+        print("Media da turma ",a,": ",sn/na)
+    a+=1
+print("Foram aprovados ", apor," alunos.")
+print("\nPercentual de alunos reprovados: ",(r/contap)*100,"%")"""
 
 #algoritmo 299 Os alunos de informática tiveram cinco provas: 1, 2, 3, 4 e 5. Criar um algoritmo que imprima:
 """
@@ -315,7 +447,6 @@ msal = 0
 contvas = 0
 contfla = 0
 contout2 = 0
-
 while x < 50 :
     op = int(input("Digite [1-FLU] || [2-BOTA] || [3-VASCO] || [4-FLA] || [5-Outros] || [0-SAIR]  ")) 
     if( op == 0 ):
@@ -348,12 +479,14 @@ if(contbot != 0):
 else:
     print("Nenhum torcedor do Botafogo")
     print("\nTotal de pessoas do Rio de Janeiro torcedores de outros clubes :",contout2)
-    print("\nTotal de pessoas de Niteroi torcedores do Fluminense: ", contflu2) """               
-            
-            
-                
+    print("\nTotal de pessoas de Niteroi torcedores do Fluminense: ", contflu2) """ 
 
-               
+
+
+
+
+
+
 
 
 

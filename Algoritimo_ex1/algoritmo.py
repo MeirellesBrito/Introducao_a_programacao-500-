@@ -360,6 +360,404 @@ else:
     else:
         print("ERRADO! estude mais!")"""
 
+#algoritmo 88  Algoritmo Calculadora
+#print("""\n\n\t\t\t\t*************
+#\t\t\t\t*CALCULADORA*
+#\t\t\t\t+ para somar
+#\t\t\t\t- para subtrair
+#\t\t\t\t* para multiplocar
+#\t\t\t\t/ para dividir 
+#\t\t\t\t*************""")
+"""resp = input("DIgite opcao: ")
+if(resp=="+"):
+    a = float(input("DIgite o primeiro numero com ponto: "))
+    b = float(input("Digite o senundo numero com ponto: "))
+    print("SOMA: ",a+b)
+else:
+    if(resp=="-"):
+        a = float(input("DIgite o primeiro numero com ponto: "))
+        b = float(input("Digite o senundo numero com ponto: "))
+        print("SUBTRACAO: ",a-b)
+    else:
+        if(resp=="*"):
+            a = float(input("DIgite o primeiro numero com ponto: "))
+            b = float(input("Digite o senundo numero com ponto: "))  
+            print("MULTIPLICACAO: ",a*b)
+        else:
+            if(resp=="/"):
+                a = float(input("DIgite o primeiro numero com ponto: "))
+                b = float(input("Digite o senundo numero com ponto: ")) 
+                print("DIVISAO: ",a/b)
+            else:
+                print("\nOPCAO NAO DISPONIVEL!!") """
+
+#algoritmo 89
+"""print("planetas que podem ser analisados: \n[1] Mercurio \n[2] Venus \n[3] Marte"
+"\n[4] Jupiter \n[5] Saturno \n[6] Urano")
+op = int(input("escolha o planeta a ser analisado: "))
+if (op > 6 or op < 0):
+    print ("Valor invalido")
+else:
+    pterra = float(input("Entre com um peso na terra: "))
+    match op:
+        case 1:
+            print(f"Seu peso no planeta terra é: {(pterra/10)*.37}")
+        case 2:
+            print(f"Seu peso no planeta terra e: {(pterra/10)*0.88}")
+        case 3:
+            print(f"Seu peso no planeta terra e: {(pterra/10)*0.38}")
+        case 4:
+            print(f"Seu peso no planeta terra e: {(pterra/10)*2.64}")
+        case 5:
+            print(f"Seu peso no planeta terra e: {(pterra/10)*1.15}")
+        case 6:
+            print(f"Seu peso no planeta terra e: {(pterra/10)*1.17}")"""
+
+#algoritmo 90 Entrar com um número e imprimi-lo caso seja maior que 20.
+"""num = int(input("Digite um numero: "))
+if (num > 20):
+    print(num)"""
+
+#algoritmo 91 Construir um algoritmo que leia dois valores numéricos inteiros e efetue a adição; caso o resultado seja maior que 10, apresentá-lo.
+"""num1 = int(input("Digite 1 numero: "))
+num2 = int(input("Digite 2 numero: "))
+soma = num1 + num2
+if(soma >10):
+    print("Soma: ",soma)"""
+
+#algoritmo 92 Construir um algoritmo que leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8;
+#caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+"""num1 = float(input("Digite 1 numero: "))
+num2 = float(input("Digite 2 numero: "))
+soma = num1 + num2
+if(soma >20. ):
+    print("SOma: ",soma+8)
+else:
+    print("Soma: ",soma-5)"""
+
+#algoritmo 93 Entrar com um número e imprimir a raiz quadrada do número caso ele seja positivo e o quadrado do número caso ele seja negativo.
+"""numero = float(input("Digite um numero: "))
+import math
+if(numero >0):
+    print("Raiz: ",math.pow(numero, 1/2))
+else:
+    if(numero<0):
+        print("Quadrado: ", numero **2)"""
+
+#algoritmo 94 Entrar com um número e imprimir uma das mensagens: é multiplo de 3 ou não é multiplo de 3.
+"""numero = int(input("Digite numero:"))
+if (numero %3 ==0 ):
+    print("Multiplo de 3")
+else:
+    print("Nao e multiplo de 3")"""
+
+#algoritmo 95 Entrar com um número e informar se ele é ou não divisível por 5.
+"""numero = int(input("Digite um numero: "))
+if(numero %5 ==0):
+    print("E Divisivel por 5")
+else:
+    print("Nao e divisivel por 5")"""
+
+#algoritmo 96 Entrar com um número e informar se ele é divisível por 3 e por 7.
+"""numero = int(input("Digite o Numero: "))
+if(numero % 3 == 0 and numero % 7 == 0):
+    print("Divisivel por [3] e por [7]")
+else:
+    print("Nao e divisivel por [3] e por [7]")"""
+
+#algoritmo 97 Entrar comum número e informarse ele é divisívelpor 10, por 5, por2 ouse não é divisível por nenhum destes.
+"""numero= int(input("digite numero: "))
+if (numero %10==0):
+    print("Multiplo de [10]")
+else:
+    if(numero %2 ==0):
+        print("Miltiplo de [2]")
+    else:
+        if(numero % 5==0):
+            print("Muntiplo de [5]")
+        else:
+            print("Nao e Multiplo de [2] nem de [5]")"""
+
+#algoritmo 98 A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
+#bruto Fazer um algoritmo que permita entrar com o salário bruto e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+"""sb = float(input("Digite o salario: "))
+vp = float(input("Digite o valor da prestacao: "))
+if(vp <=0.3 *sb):
+    print("Emprestimo concedido")
+else:
+    print("Emprestimo negado")"""
+
+#algoritmo 99 Ler um número inteiro de 3 casas decimais e imprimir se o algarismo da casa das centenas é par ou ímpar.
+"""num=int(input("Numero de 3 algarismo: "))
+c=num /100
+if(c%2==0):
+    print("O algarismo das centenas e par: ",c)
+else:
+    print("O algarismo das centenas e impar: ",c)"""
+
+#algoritmo 100 Ler um número inteiro de 4 casas e imprimir se é ou não múltiplo de quatro o número 
+# formado pelos algarismos que estão nas casas das unidades de milhar e das centenas.
+"""num=int(input("Numero de 4 algarismo: "))
+c = num /100
+if(c % 4 == 0):
+    print("o numero e multiplo de 4: ",c)
+else:
+    print("O numero nao e multiplo de 4: ",c)"""
+
+#algoritmo 101 Construir um algoritmo que indique se o número digitado está compreendido entre 20 e 90 ou não.
+"""num = float(input("Digite um numero "))
+if( num > 20. and num < 90. ):
+    print("O numeri esta na faixa de 20 a 90, exclusive")
+else:
+    print("O numero esta fora da faixa de 20 a 90")"""
+
+#algoritmo 102 Entrar com um número e imprimir uma das mensagens: maior do que 20, igual a 20 ou menor do que 20.
+"""numero = float(input("Digite um numero: "))
+if(numero > 20):
+    print("Maior que 20")
+else:
+    if(numero <20):
+        print("Menor que 20")
+    else:
+        print("Igual a 20")"""
+
+#algoritmo 103 Entrar com o ano de nascimento de uma pessoa e o ano atual. Imprimira idade da
+#pessoa. Não se esqueça de verificar se o ano de nascimento é um ano válido.
+"""anoa = int(input("Entre com ano atual: "))
+anon = int(input("Entre comano de nascimento: "))
+if(anon > anoa):
+    print("Ano de Nacimento Invalido")
+else:
+    print("Idade: ",anoa-anon)"""
+
+#algoritmo 104 Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e
+#tiver menos que 25 anos, imprimir nome e a mensagem: ACEITA. Caso contrário,
+#imprimir nome e a mensagem: NÃO ACEITA. (Considerar f ou F.)
+"""nome = input("Digite Nome: ")
+sexo = input("Digite sexo: ")
+idade = int(input("Digite idade: "))
+if ((sexo =="F" or sexo=="f") and idade<25):
+    print(nome,"ACEITO")
+else:
+    print(nome,"NAO ACEITO")"""
+
+#algoritmo 105 Entrar com a sigla do estado de uma pessoa e imprimir uma das mensagens:
+"""sigla = input("Digite sigla: ")
+if(sigla =="RJ" or sigla=="rj"):
+    print("Carioca")
+else:
+    if(sigla=="SP" or sigla == "sp"):
+        print("Paulista")
+    else:
+        if(sigla=="MG" or sigla=="mg"):
+            print("Mineiro")
+        else:
+            print("outro estado")"""
+
+#algoritmo 106 Entrar com um nome e imprimi-lo se o primeiro caractere for a letra A (considerar letra minúscula ou maiúscula).
+"""nome = input("Digite seu nome: ")
+letra = nome[0]
+if(letra=="A" or letra =="a"):
+    print(": ",nome)"""
+
+#algoritmo 107 Entrar com o nome de uma pessoa e so imprimi-lo se o prenome for JOSE
+"""nome = str(input("DIgite Seu nome completo: "))
+if(nome[:4] =="JOSE"  or nome[-4:]=="JOSE"):
+    print("",nome)"""
+
+#algoritmo 108 Idem ao anterior, porém considerar: JOSÉ, José ou josé.
+"""nome =input("DIgite Seu nome completo: ")
+if(nome[:4] =="JOSE" or nome[:4] =="jose" or nome[:4] =="Jose"  or nome[-4:]=="JOSE" or nome[-4:]=="jose" or nome[-4:]=="Jose"):
+    print("",nome)"""
+
+#algoritmo 109 Criar um algoritmo que entre com dois nomes e imprimi-los em ordem alfabética.
+"""nome1 = input("Digite o 1 nome: ")
+nome2 = input("Digite o 2 nome: ")
+if(nome1<nome2):
+    print(nome1,"",nome2)
+else:
+    print(nome2," ",nome1)"""
+
+#algoritmo 110 Criar um algoritmo que leia dois números e imprimir uma mensagem dizendo se são iguais ou diferentes.
+"""a = float(input("DIgite o 1 numero: "))
+b = float(input("Digite o 2 numero: "))
+if(a==b):
+    print("Iguais")
+else:
+    print("Diferentes")"""
+
+#algoritmo 111 Entrarcom dois números e imprimir o maiornúmero (suponha números diferentes).
+"""a = input("DIgite 1 numero: ")
+b = input("DIgite 2 numero: ")
+if(a>b):
+    print("Mario:",a)
+else:
+    print("Mario:",b)"""
+
+#algoritmo 112 Entrar com dois números e imprimir o menor numero (suponha números diferentes).
+"""a = input("DIgite 1 numero: ")
+b = input("DIgite 2 numero: ")
+if(a<b):
+    print("Mario:",a)
+else:
+    print("Mario:",b)"""
+
+#algoritmo 113 Entrar com dois números e imprimi-los em ordem crescente (suponha números diferentes).
+"""a = input("DIgite 1 numero: ")
+b = input("DIgite 2 numero: ")
+if(a<b):
+    print(a," ",b)
+else:
+    print(b," ",a)"""
+
+#algoritmo 114 Entrar com dois números e imprimi-los em ordem decrescente (suponha números diferentes).
+"""a = input("DIgite 1 numero: ")
+b = input("DIgite 2 numero: ")
+if(a>b):
+    print(a," ",b)
+else:
+    print(b," ",a)"""
+
+#algoritmo 115 Criar o algoritmo que deixe entrar com dois números e imprimir o quadrado do menor número e a raiz quadrada do maior número, se for possível.
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+import math
+if(a>b):
+    print(math.pow(a,1/2),"",b**2)
+else:
+    if(b>a):
+        print("",math.pow(b,1/2),"",a**2)
+    else:
+        print("Numero iguais")"""
+
+#algoritmo 116 Entrar com três números e imprimir o maior número (suponha números diferentes).
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if(a>b):
+    if(a>c):
+        print("Maior: ",a)
+    else:
+        print("Maior: ",c)
+else:
+    if(b>c):
+        print("Maior: ",b)
+    else:
+        print("Maior: ",c)
+
+a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if(a>b or a>c):
+    print("Maior: ",a)
+else:
+    if(b>c):
+        print("Maior: ",b)
+    else:
+        print("Maior: ",c)"""
+
+#algoritmo 117 Entrar com três nu" meros e armazenar o maior numero na varia" vel de nome maior(suponha números diferentes)
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+maior=0
+if(a>b):
+    Maior = a
+else:
+    Maior = b
+if(c > maior):
+    maior=c
+print("Maior: ",maior)
+
+a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+maior=a
+if(b>maior):
+    maior=b
+if(c > maior):
+    maior=c
+print("maior: ",maior)"""
+
+#algoritmo 118 Entrar com três números e imprimi-los em ordem crescente (suponha números diferentes).
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if (a>b):
+    aux=a;a=b;b=aux
+if(a>c):
+    aux=a;a=c;c=aux
+if(b>c):
+    aux=b;b=c;c=aux
+print("Ordem Cresecnte: ",a," ",b," ",c)"""
+
+#algoritmo 119 Entrar com três números e imprimi-los em ordem decrescente (suponha números diferentes).
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if (a>b):
+    aux = a; a = b; b = aux
+if(a>c):
+    aux = a; a = c; c = aux
+if(b>c):
+    aux =b;b = c; c = aux;
+    aux=b;b=c;c=aux
+print("Ordem Cresecnte: ",c," ",b," ",a)"""
+
+#algoritmo 120 Entrar com três números e armazená-los em três variáveis com os seguintes nomes maior, intermediário e menor (suponha numeros diferentes)
+"""a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+intermediario =0
+menor=0
+if(a>b):
+    if(c>a):
+        maior=c
+        intermediario=c
+        menor=b
+    else:
+        if(c>b):
+            maior = a
+            intermediario = c
+            menor=b
+else:
+    if(c>b):
+        maior=c
+        intermediario=b
+        menor=a
+    else:
+        maior=b
+        intermediario=a
+        menor=c
+
+print("\nMaior:",maior)
+print("Intermediario:",intermediario)
+print("Menor:",menor)
+print("\n")
+
+a = float(input("DIgite 1 numero: "))
+b = float(input("DIgite 2 numero: "))
+c = float(input("DIgite 3 numero: "))
+if(a>b):
+    aux=a;a=b;b=aux
+if(a>c):
+    aux=a;a=c;c=aux
+if(b>c):
+    aux=b;b=c;c=aux
+maior=c
+intermediario=b
+menor=a
+print("\nMaior:",maior)
+print("Intermediario:",intermediario)
+print("Menor:",menor)
+print("\n")"""
+
+#algoritmo 121 Efetuara leitura de cinco números inteiros diferentes e identificar o maior e o menorvalor.
+
+
+
+
+
 #algoritmo 298 Numa universidade, os alunos das turmas de informática fizeram uma prova de
 """algoritmos. Cada turma possui um número de alunos. Criar um algoritmo que im-prima:
  quantidade de alunos aprovados;

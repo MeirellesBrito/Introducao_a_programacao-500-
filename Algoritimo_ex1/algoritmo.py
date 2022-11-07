@@ -1527,6 +1527,352 @@ else:
         y=x**3
 print("valor de f(x)=",y)"""
 
+#algoritmo 161 Criar um algoritmo que entre com cinco números e imprimir o quadrado de cada número.
+"""c=0
+while(c<=4):
+    c+=1
+    num=float(input("Numero: "))
+    print("Quadrado: ",num**2)"""
+ 
+#algoritmo 162 Criar um algoritmo que imprima todos os números pares no intervalo 1-10
+"""c=0
+while(c<=9):
+    c+=2
+    print("Numero: ",c) """
+    
+#algoritmo 163   
+"""voltaLagoa = 0
+abdominais = 1
+while (voltaLagoa<=3):  
+    print("\n",voltaLagoa,"a volta na Logoa")
+    voltaLagoa+=1
+    while(abdominais<=5):
+        print("\n ", abdominais, "o abdominal")
+        abdominais += 1"""
+
+#algoritmo 164
+"""a=1
+print("Comecei")
+while(a<=50000):
+    a+=1
+    print(a)
+print("FIM") """   
+    
+#algoritmo 165    
+"""a=1
+print("zona 1")
+while(a<=8):
+    a+=1
+    print("zona",a)"""
+    
+#algoritmo 166
+"""L=0
+c=0
+print("\nTODOS\n")
+while(L<=9):
+    L+=1
+    while(c<=9):
+        c+=1 
+        print(c,"-",L,"\t")  """
+        
+#algoritmo 167  
+"""L=0;c=0;t=0
+print("\nACIMA DA DIAGONAL PRINCIPAL\n")
+while(L<=8):
+    L+=1
+    while(c<=9):
+        c+=1 
+        print("\t",L,"-",c) 
+        while(t<=L):
+            t+=1
+            print("\t")"""
+ 
+#algoritmo 168 
+"""L=1;t=1
+print("\nDIAGONAL PRINCIPAL\n")
+while(L<=10):
+    L+=1
+    print(L,"-",L,"\n") 
+    while(t<=L):
+        t+=1;print("\t") """ 
+
+#algoritmo 169
+"""L=1;c=0
+print("\nABAIXO DA DIAGONAL PRINCIPAL\n")
+while(L<=9): 
+    L+=1
+    print("") 
+    while(c<L):
+        c+=1
+        print(L,"-",c,"")"""
+        
+#algoritmo 170  
+"""L=1;c=0
+print("\nACIMA DA DIAGONAL SECUNDARIA\n")
+while(L<=8): 
+    L+=1
+    while(c<10-L):
+        c+=1
+        print(c,"-",L,"") """     
+          
+#algoritmo 171
+""" print("\nDIAGONAL SECUNDARIA\n")
+L=1;t=10-L
+while(L<=8): 
+    L+=1
+    while(t>=1):
+        t-=1
+        print(t,"-",11-L,"")  """  
+#algoritmo 172 
+""" print("\nABAIXO DA DIAGONAL SECUNDÁRIA\n")
+L=2;t=11-L;c=12-L
+while(L<=10): 
+    L+=1
+    while(t>=1):
+        t-=1
+        while(c<=10):
+            c+=1
+            print(t,"-",c,"") """   
+
+#algoritmo 173
+"""L=0;c=0
+print("\nT ODOS\n")
+while(L<=9): 
+    L+=1
+    while(c<=9): 
+        c+=1
+        print(L, "-" ,c, "\t")"""   
+
+#algoritmo 174 Imprimir todos os números de 1 até 100.
+"""a=0
+while(a<=99): 
+    a+=1
+    print(a)"""
+    
+#algoritmo 175 Imprimir todos os números de 100 até 1.
+"""a=101
+while(a>=2): 
+    a-=1
+    print(a) """  
+    
+#algoritmo 176 Imprimir os 100 primeiros pares. 
+"""a=0
+while(a<=199): 
+    a+=1+1
+    print(a)"""
+    
+#algoritmo 177 Imprimir os múltiplos de 5, no intervalo de 1 até 500. 
+"""a=5
+while(a<=499): 
+    print(a) 
+    a+=5"""   
+    
+#algoritmo 178 Imprimir o quadrado dos numeros de 1 ate 20 
+"""   a=1
+while(a<=20):
+    a+=1
+    print(a^2)"""   
+   
+#algoritmo 179 Criar um algoritmo que imprima os numeros pares no intervalo de 1 a 600      
+""" i=2
+while(i<=198):
+    i+=2
+    print(i)""" 
+    
+#algoritmo 180 Criar um algoritmo que imprima os números de 120 a 300.
+""" i=119
+while(i<=299):
+    i+=1
+    print(i)""" 
+    
+#algoritmo 181 Criar um algoritmo que imprima todos os numeros de 1 ate 100 e a soma deles
+""" i=0
+while(i<=99):
+    i+=1
+    print(i)
+print("\nSomatorio de 1 a 100 e :",i+i)""" 
+
+#algoritmo 182 Entrar com 10 números e imprimir a metade de cada número. 
+""" i=0
+while(i<=9):
+    i+=1
+    numero= float(input("Digite Numero: "))
+    print("METDADE: ",numero/2)""" 
+    
+#algoritmo 183 Entrar com 10 números e imprimir o quadrado de cada número. 
+""" i=0
+while(i<=9):
+    i+=1
+    numero= float(input("Digite Numero: "))
+    print("METDADE: ",numero**2)"""
+    
+#algoritmo 184  Entrar com 8 números e, para cada número, imprimir o logaritmo desse número na base 10. 
+"""import math
+i=0
+while(i<=7):
+    i+=1
+    numero= float(input("Digite Numero: "))
+    if(numero>0):
+        print("METDADE: ",math.log(numero)/math.log(10))
+    else: 
+        print("\nNao fao logaritmo de numero negativo")"""  
+    
+#algoritmo 185 Entrar com 15 números e imprimir a raiz quadrada de cada número. 
+"""  import math
+i=0
+while(i<=14):
+    i+=1
+    numero= float(input("Digite Numero: "))
+    if(numero>0):
+        print("Raiz: ",math.pow(numero,1/2))
+    else: 
+        print("\nNao fao Raiz de numero negativo")"""      
+
+#algoritmo 186 Entrar com quatro números e imprimir o cubo e a raiz cúbica de cada número.
+"""   import math
+i=0
+while(i<=3):
+    i+=1
+    numero= float(input("Digite Numero: "))
+    print("Cubo: ",numero**3)
+    if(numero>0):
+        print("Raiz: ",numero**(1/3))
+    else: 
+        print("\nNao fao Raiz de numero negativo")"""
+    
+#algoritmo 187 Criar um algoritmo que calcule e imprima o valor de b". O valor de n deverá ser maior do que 1 e inteiro e o valor de b maior ou igual a 2 e inteiro.   
+""" base= int(input("Digite a base inteira e maior do que 1: "))    
+expo= int(input("Digite expoente inteiro maior que 1:  "))
+i=0
+if(base>=2 and expo>1):
+    pot=1
+    while(i<=expo):
+        pot*=base
+        i+=1
+        print("potencia: ", pot)
+else:
+    print("Nao satisfazem")""" 
+
+#algoritmo 188 Criar um algoritmo que imprima uma tabela de conversão de polegadas para centímetros. Deseja-se que na tabela conste valores desde 1 polegada até 20 polegadas inteiras. 
+"""print("Conversao de polegadas para centimetros")
+L=0
+while(L<=20):
+    L+=1
+    print("\n", L, " equivale(m) a ",L*2.54, "II cm")"""
+    
+#algoritmo 189 Criar um algoritmo que imprima a tabela de conversão de graus Celsius-Fahrenheit 
+#para o intervalo desejado pelo usuário. O algoritmo deve solicitar ao usuário o li - mite superior, o limite inferior do intervalo e o decremento. 
+#Fórmula de conversão: C =5 (F - 32) / 9
+""" f1=int(input("entre com a temperatura maior em Fahrenheit: "))
+f2=int(input("entre com a temperatura menor em Fahrenheit: "))
+dec=int(input("entre com decremento: "))
+t=f1
+while(t>=f2):
+    t=t-dec
+    print("temperatura em graus Cesius: ",5*(t-32)/9)""" 
+     
+#algoritmo 190 Entrar com um nome, idade e sexo de 20 pessoas. Imprimir o nome se a pessoa for do sexo masculino e tiver mais de 21 anos. 
+"""i=0
+while(i<=10):
+    nome=str(input("Digite seu nome: "))
+    sexo=str(input("Digite seu sexo: "))
+    idade=int(input("Digite sua idade: "))
+    if(sexo[0]=="m" or sexo[0]=="M" and idade>=21):
+        print("\n",nome)"""
+ 
+#algoritmo 191 Criar um algoritmo que leia um nÚmero que será o limite suprior de um intervalo e 
+#o incremento (incr) Imprimir todos os numeros naturais no intervalo de O ate esse 
+#numero Suponha que os dois numeros lidos são maiores do que zero Exemplo
+"""limite=int(input("Digite o numero limite: "))
+incr= int(input("e o incremento pressionando: ")) 
+i=0
+while(i<=limite):
+    i=i+incr
+    print(i," ")"""   
+
+#algoritmo 192 Criar um algoritmo que leia um número que será o limite superior de um intervalo 
+#e imprimir todos os números ímpares menores do que esse número. Exemplo: 
+#Limite superior: 15     Saída: 1 3 5 7 9 11 13     
+"""  num=int(input("Digite um numero: "))
+vf=num-3
+i=-1
+while(i<=vf):
+    i=i+2
+    print(i)"""  
+    
+#algoritmo 193 Criar um algoritmo que leia um número que servirá para controlar os números pares que serão impressos a partir de 2. 
+# Exemplo: Quantos: 3    Saída: 2 4 6 8   
+"""  num=int(input("Digite um numero: "))
+vf=num*2
+i=0
+while(i<=vf):
+    i=i+2
+    print(i)"""      
+    
+#algoritmo 194 Criar um algoritmo que leia um número e imprima todos os números de 1 até o número lido e o seu produto.
+# Exemplo: número: 3 Saída: 1 2 3 4     
+"""      num=int(input("Digite um numero: "))
+i=0
+produto=1
+while(i<=num):
+    i+=1
+    produto*=i
+    print(i," ")
+print("Produto de 1 a ",num,": ",produto)"""      
+
+#algoritmo 195 Criar um algoritmo que imprima a soma dos números pares entre 25 e 200. 
+""" soma=0
+i=26
+while(i<=198):
+    i+=2
+    soma+=i
+    print(i,"Soma 26-200: ",soma)"""    
+    
+#algoritmo 196 Criar um algoritmo que leia um número (num) e imprima a soma dos números múltiplos dé 5 no intervalo aberto entre 1 e num. Suponha que num será maior que zero.     
+""" soma =0
+i=5
+num=int(input("Digite um numero maior que zero: "))
+num=num-1
+while(i<num):
+    i+=5
+    soma+=i
+    print("Soma dos multiplos de 5: ",soma)""" 
+
+#algoritmo 197 Criar um algoritmo que leia um número que servirá para controlar os primeiros números ímpares. Deverá ser impressa a soma desses números. Suponha que num será maior que zero. 
+#Quantos: 5 Saída: 25 
+#( 1 3 5 7 9) - primeiros ímpares
+""" num=int(input("Digite um numero maior que zero: "))
+impar=0
+i=1
+while(i<=num*2 ):
+    i+=2
+    impar+=i
+    print("",impar)""" 
+
+#algoritmo 198 Criar um algoritmo que leia os limites inferior e superior de um intervalo e impri - ma todos os números naturais no intervalo fechado. Suponha que os dados digitados são para um intervalo crescente. Exemplo: 
+"""ini=int(input("Limite inferior,: "))
+f=int(input("Limite superior: "))
+i=ini
+while(i<=f):
+    print(i)
+    i+=1"""
+
+#algoritmo 199 Criar um algoritmo que leia os limites inferior e superior de um intervalo e impri - ma todos os números múltiplos de 6 no intervalo fechado. Suponha que os dados digitados são para um intervalo crescente. Exemplo: 
+#Limite inferior: 5      Saída: 5 11 
+#Limite superior: 13 
+"""ini=int(input("Limite inferior: "))
+f=int(input("Limite superior: "))
+i=ini
+if(ini % 6 ==0 ):
+    ini+=6
+else:
+    ini=ini+(6-(ini % 6))
+    f=f-1
+while(i<=f):
+    print(i)
+    i+=6"""
+    
+#algoritmo 200 Criar um algoritmo que leia os limites inferior e superior de um intervalo e o número cujos múltiplos se deseja que sejam impressos no intervalo aberto. Suponha que os dados digitados sãopara um intervalo crescente. E    
 
 #algoritmo 298 Numa universidade, os alunos das turmas de informática fizeram uma prova de
 """algoritmos. Cada turma possui um número de alunos. Criar um algoritmo que im-prima:
@@ -1661,3 +2007,15 @@ else:
 
 
 
+
+
+
+
+
+
+
+    
+    
+    
+    
+    

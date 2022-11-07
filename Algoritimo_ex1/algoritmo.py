@@ -1996,8 +1996,158 @@ else:
     print("\nTotal de pessoas do Rio de Janeiro torcedores de outros clubes :",contout2)
     print("\nTotal de pessoas de Niteroi torcedores do Fluminense: ", contflu2) """ 
 
+#algoritmo 301 Criar um algoritmo que imprima a porcentagem dos alunos que gasta acima de 
+#R$ 200,00 com outras despesas, o número de alunos com renda pessoal maior 
+#que renda familiar e a porcentagem gasta com alimentação e outras despesas em 
+#relação às rendas pessoal e familiar.
+"""n=0
+cont=0
+cont2=0
+rp= float(input("Digite sua renda pessoal ou O. para acabar: "))
+while(rp>0):
+    n+1
+    rf=float(input("Digite renda familiar fora a sua: "))
+    totali= float(input("Digite quanto gasta com alimentacao: "))
+    totout= float(input("Digite quanto gasta com outras despesas:  "))
+    if(totout>200):
+        cont+1
+        if(rp>rf):
+            cont2+1
+            print("\n" , ((totali+totout)*100)/(rp+rf),"%" " sao gastos com alimentos + despesas em relacao a renda pessoal e familiar")
+            rp=float(input("Digite sua renda pessoal ou 0. para acabar: "))
+            print("\n",((cont*100)/n,2),"%" " dos alunos gastam acima de R$ 200,00 com outras despesas")
+            print("\nNumero de alunos com renda pessoal maior que a familiar",cont2)"""
+
+#algoritmo 302 Uma agência de turismo quer fazer um levantamento das praias da cidade para uma 
+#programação turística de verão, sabendo-se que cada praia tem um nome e uma distancia (em km) do hotel. Criar um algoritmo que forneça os seguintes dados: 
+# porcentagem de turistas nas praias próprias do hotel; 
+# a praia mais distante; 
+#nome e distância das praias não-próprias com distância do hotel maior que 10 km; 
+"""a=0;cont=0;mdist=0
+nome=input("Digite o nome da praia ou @ para terminar: ")
+while(nome != "@"):
+    a+=1
+    dist=float(input("Qual a distancia do hotel:  "))
+    cond=input("Praia P(ropria) ou N(nao propria)?")
+    while(cond!="p"and cond!="P" and cond!="n"and cond!="N"):
+        cond=input("Atencao! Digite somente P(ropria) ou N(ao propria)?")
+    if(cond=="P" or cond=="p"):
+            cont+=1
+    else:
+        if(dist>10):
+            print("Nome da praia:",nome)
+            print("Distancia hotel:",dist)
+    if(dist>mdist):
+        mdist=dist; mnome=nome
+        nome=input("Digite o nome da praia ou @ para terminar: ")
+print("\nA porcentagem de turistas nas praias proprias foi de: ",(cont*100)/a,"%")
+print("Praia mais distante :",mnome)"""
+
+#algoritmo 303Criar um algoritmo que ajude o DETRAN a saber o total de recursos que foram arrecadados com a aplicação de multas de trânsito. 
+#O algoritmo deve ler as seguintes informações para cada motorista: 
+#número da carteira de motorista (de 1 a 4327), 
+#número de multas; 
+#valor de cada uma das multas. 
+#Deve ser impresso o valor da dívida para cada motorista e ao final da leitura o total de 
+#recursos arrecadados (somatório de todas as multas). O algoritmo deverá imprimir 
+#também o número da carteira do motorista que obteve o maior número de multas. 
+"""total=0
+mnmult=0
+c=1
+cart=int(input("\ndigite carteira de motorista ou 0 para terminar: "))
+while(cart!=0):
+    nmult=int(input("Digite numero de multas: "))
+    if(nmult > mnmult):
+        mnmult = nmult; mcart = cart; 
+        while(c<=nmult):
+            c+=1
+            valor=float(input("Digite valor da multa: "))
+            total+=valor
+            print("\ncarteira: ",cart)
+            print("\nvalor a pagar: ",total)
+            cart=int(input("\ndigite carteira de motorista ou 0 para terminar: "))
+            print("\nnumero da carteira com maior numero de multas ",mcart)"""
+         
+#algoritmo 304 Criar um algoritmo que leia um conjunto de valores inteiros positivos e cujo ulti - mo valor e 1 Dentre os valores lidos o algoritmo deve imprimir 
+#Q menor valor dentre os maiores que 100 e menores que 1000; 
+#A média desses valores dentre os maiores que 100 e menores que 1000; 
+#A soma desses valores dentre os maiores que 100 e menores que 1000 
+#A soma de todos os valores lidos o valor -1" não deve ser considerado 
+#Se nenhum valor estiver dentro do intervalo o algoritmo deve imprimir uma 
+#mensagem para o usuario explicando o ocorrido 
+"""cont =0; tot1=0; tot2 =0
+num=int(input("Digite numero ou -1 para acabar: "))
+menor=1001
+while(num > -1):
+    tot2+=num
+    if(num>10 and num<100):
+        cont+1;tot1+num
+    if(num<menor):
+        menor=num
+    num=int(input("Digite numero ou -1 para acabar: "))
+    if(cont!=0):
+        print("Menor entre 100 e 1000: ",menor)
+        print("Media entre 100 e 1000: ",tot1/cont)
+        print("Soma entre 100 e 1000: ",tot1)
+    else:
+        print("Nao foi digitado numero entre 100 e 1000")
+        print("Soma de totas: ",tot2)"""
+             
+#algoritmo 305 Criar um algoritmo que gerencie as contas correntes dos clientes do Banco Qir 
+#Cup, um banco ítalo-anglo-franco-luso-nipo-brasileiro. O algoritmo deverá ler, 
+#para cada cliente, o código do cliente (tipo inteiro), saldo anterior (tipo real) e as 
+#movimentações da conta. 
+#Cada movimentação é composta por um código (tipo caractere, C, D ou F, indi- cando Crédito, Débito ou fim das movimentações deste cliente) e um valor (tipo 
+#real). Deverá ser impresso, para cada cliente, o seu código e o saldo atual (após o 
+#processamento das movimentações). 
+#Ao final, deverá ser impresso o total de dinheiro em caixa no banco (soma dos saldos de todos os clientes) e o código do cliente que possui o maior saldo.
+# O algorit - mo se encerra quando se digita um código menor ou igual a zero
+"""tot = 0
+n1=int(input("Entre com o codigo do cliente ou codigo menor ou igual a O para terminar: "))
+maior=-999999999.00
+while(n1> 0):
+    n2=int(input("Entre com o saldo anterior: "))
+    n3=input("Entre com o tipo de movimentacao C(Credito) D(Debito) F(fim das movimentacoes deste cliente): ")
+    while(n3!="f" and n3!="F"):
+        n4=int(input("Entre com o valor da movimentacao: "))
+        if(n3=="c" or n3=="C"):
+            n2+=n4
+            if(n3=="d"or n3=="D"):
+                n2-=n4
+        n3=input("Entre com o tipo de movimentacao C(Credito) D(Debito) F(fim das movimentacoes deste cliente): ")
+    print("Seu codigo e ",n1," Saldo atua",n2)
+    tot+=n2
+    if(n2>maior):
+        maiorcod =n1;maior=n2
+        n1=int(input("\nEntre com o codigo do cliente ou codigo menor ou igual a O para terminar : "))
+print("total de dinheiro em banco : ", tot)
+print(maiorcod, " E o codigo do cliente com maior saldo: ", maior)"""
+    
+#algoritmo 306  A TELEMAR deseja calcular as contas telefônicas de seus assinantes através do computador. 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 

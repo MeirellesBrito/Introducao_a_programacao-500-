@@ -2455,6 +2455,7 @@ print("idade medio de todos os times: ",totid/360)"""
 
 #algoritmo 248
 #algoritmo 249
+
 #algoritmo 250 imprimir todas as tabuadas de multiplicar de 1 ate 10
 """for L in range(1,10,1):
     print("TABUADA DO ",L)
@@ -2517,14 +2518,112 @@ for L in range(y,0,-1):
                 s=1
             c+=2"""
 
-#algoritmo 258
+#algoritmo 258 Nos exemplos a seguir, mostraremos a importância da chave e da inicialização da variável que faz parte da expressão que controla a re
+"""while(num > 0):
+    num=float(input("Digite um numero: "))
+    print("Dobro do numero: ",num*2)
+# Fali: Variável num não-inicializada."""
+
 #algoritmo 259
+"""num=float(input("Digite um numero: "))
+while(num > 0.):
+    print("Dobro do numero: ",num*2)
+#Observação: O algoritmo entra em loop"""
+
 #algoritmo 260
-#algoritmo 261
-#algoritmo 262
-#algoritmo 263
-#algoritmo 264
-#algoritmo 265
+"""Explicando: 
+Tendo em vista que nossa experiência anterior falhou, nossa segunda tendência 
+é deslocar a leitura para fora da estrutura. 
+Mas, desta vez, teremos outro problema: o algoritmo entra em Ioop pois nunca mais 
+atribuímos valor à variável num. É preciso interromper pressionando <ctrl> <c>. """
+
+"""num=float(input("Digite um numero: "))
+while(num > 0.):
+    print("Dobro do numero: ",num*2)
+    num=float(input("Digite numero: "))"""
+    
+#algoritmo 261 Simulando a estrutura do faca enquanto 
+"""import math
+
+print("MENU-um pouco de tudo")
+print("A - Armazena na variavel menor e imprime o nome que tiver o menor numero de caracteres entre tres")
+print("B - Gera e imprime uma nova palavra")
+print("C - Calcula e imprime a raiz a quarta de um numero")
+print("F - Finalizar")
+op=input("\nOPCAO: ")
+if(op=="A" or op=="a"):
+    i=1
+    p1=input("Digite {i} palavra")
+    i+=1
+    p2=input("Digite {i} palavra")
+    i+=1
+    p3=input("Digite {i} palavra")
+    i+=1
+    if(len(p1)<len(p2)):
+        menor=p1
+    else:
+        menor=p2
+    if(len(p3)<len(menor)):
+        menor=p3
+        print("\n",menor)
+else:
+    if(op=="B" or op=="b"):
+        p1=input("Digite uma palavra: ")
+        if(len(p1)>5):
+            n=len(p1)-2
+            p2=len(p1)
+            p3=len(p1,n)
+            np=len(p2,p3)
+            print("\n",np)
+        else:
+            n=len(p1)-3
+            np=len(p1,n)
+            print("",np)
+
+    else:
+        if (op=="C" or op=="c"):
+            num=float(input("Digie um numero: "))
+            if(num>=0.):
+                print("\naiz a quarta:",math.pow(num,(1/2)/2))
+            else:
+                print("NAO PODE SER FEITA:")
+        else:
+            if(op=="F" or op=="f"):
+                print("\n\n\n\t\t\t\tFINALIZANDO")
+            else:
+                print("\nopcao invalida")"""
+
+#algoritmo 262 Entrar com numeros e imprimir o triplo de cada numero O algoritmo acaba quando entrar o numero -999 
+"""num=float(input("Digite numero ou -999. para terminar: "))
+while(num!=-999.):
+    print("Triplo: ",num*3)
+    num=float(input("Digite numero ou -999. para terminar: "))"""
+
+#algoritmo 263 Entrar com números enquanto forem positivos e imprimir quantos números foram digitados. 
+"""a=0
+num=float(input("Digite numero positivo: "))
+while(num>0.):
+    a+=1;num=float(input("Digite numero positivo: "))"""
+
+#algoritmo 264 Entrar com vários números positivos e imprimira média dos números digitados. 
+"""a=0
+soma=0
+num=float(input("DIgite numero positivo: "))
+while(num>0):
+    a+=1
+    soma+=num
+    num=float(input("DIgite numero positivo: "))
+print("Media: ",soma/a)"""
+
+#algoritmo 265 Ler vários números e informar quantos números entre 100 e 200 foram digitados. 
+#Quando o valor O (zero) for lido, o algoritmo deverá cessar sua execução. 
+"""a=0
+num=float(input("Digite numero ou 0 para sair: "))
+while(num!=0.):
+    if(num>=100 and num <=200):
+        a+=1
+    num=float(input("Digite numero ou 0 para sair: "))
+print("total:",a)"""
 
 #algoritmo 266 Entrar com nomes enquanto forem diferentes de FIM e imprimir o primeiro caractere de cada nome.
 """nome=input("Digite nime ou FIM para terminar: ")
@@ -2540,19 +2639,106 @@ while(prof != "FIM" and prof != "Fim" and prof != "fim"):
         a+=1
     prof=input("Digite profissao ou FIm para sair: ")
 print("total de dentista: ",a)"""
-#algoritmo 268
-#algoritmo 269
-#algoritmo 270
-#algoritmo 271
-#algoritmo 272
-#algoritmo 273
-#algoritmo 274
-#algoritmo 275
+#algoritmo 268 Entrar com sexo de várias pessoas e imprimir quantas pessoas são do sexo mascu -lino (considerar m ou M). 
+"""a=0
+sexo=input("Digite sexo(M/F) ou @ para sair: ")
+while(sexo[0]!="@"):
+    if(sexo[0]=="M" or sexo[0]=="m"):
+        a+=1
+    sexo=input("Digite sexo(M/F) ou @ para sair: ")
+print("TOtal de pessoas de sexo masculino: ",a)"""
+
+#algoritmo 269 Entrar com números e imprimir o quadrado de cada número até entrar um número múltiplo de 6 que deverá ter seu quadrado também impresso. 
+"""num=int(input("Digite numero ou multiplo de 6 para acabar: "))
+print("quadrado: ",num^2)
+while(num%6!=0):
+    print("\n")"""
+
+#algoritmo 270 Ler vários numeros ate entrar o numero -999 Para cada numero imprimirseus divisores
+"""num=int(input("DIgite numero ou -999 para acabar: "))
+while(num!=-999):
+    print(num/2)
+    num=int(input("DIgite numero ou -999 para acabar: "))"""
+
+#algoritmo 271 Dado um país A, com 5.000.000 de habitantes e uma taxa de natalidade de 3% ao 
+#ano, e um país B com 7.000.000 de habitantes e uma taxa de natalidade de 2% 
+#ao ano calcular e imprimir o tempo necessario para que a população do pais A ultrapasse a população do pais B
+"""a = 5000000.
+b = 7000000.
+anos=0
+while(a<=b):
+    a*=1.03
+    b*=1.02
+    anos+=1
+print("Anos:",anos)"""
+
+#algoritmo 272 Chico tem 1,50m e cresce 2 centímetros por ano, enquanto Juca tem 1, 1 O e cresce 3 centímetros por ano. Construir um algoritmo que calcule e imprima quantos anos serão necessários para que Juca seja maior que Chico. 
+"""c=1.5
+j=1.1
+anos=0
+while(j<=c):
+    c+=0.02
+    j+=0.03
+    anos+=1
+print("anos:",anos)"""
+
+#algoritmo 273 Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medi- dores de consumo. Para cada consumidor, são digitados os seguintes dados: 
+# número do consumidor 
+#quantidade de kWh consumidos durante o mês 
+#im tipo (código) do consumidor 
+#1 - residencial, preço em reais por kWh = 0,3 
+#2- comercial, preço em reais por kWh = 0,5 
+#3 - industrial, preço em reais por kWh = 0,7 
+#Os dados devem ser lidos até que seja encontrado um consumidor com número O 
+#(zero). Calcular e imprimir: 
+# o custo total para cada consumidor 
+# o total de consumo para os três tipos de consumidor 
+# a média de consumo dos tipos 1 e 2 
+"""c12 = 0; total = 0.;total12 = 0.
+codigo=int(input("digite codigo(1-res 2-com 3-ind) ou O para sair: "))
+while(codigo!=0):
+    qtde=float(input("Digite quatidadede KWH: "))
+    total+=qtde
+    if(codigo==1):
+        print("custo:",qtde*0.3)
+        c12+=1
+        total12+=qtde
+    else:
+        if(codigo==2):
+            print("custo:",qtde*0.5)
+            c12+=1
+            total12+=qtde
+        else:
+            if(codigo==3):
+                print("Custo:",qtde*0.70)
+    codigo=int(input("digite codigo(1-res 2-com 3-ind) ou O para sair: "))
+    print("total consumido em 1-2-3:",total)
+    if(c12!=0):
+        print("media 1-2:",total12/12)
+    else:
+        print("\nNenhum consumidor na faixa1-2")"""
+
+#algoritmo 274 Criar um algoritmo que deixe entrar com 10 números positivos e imprima raiz 
+#quadrada de cada número. Para cada entrada de dados deverá haver um trecho 
+#de proteção para que um número negativo não seja aceito. 
+"""import math
+
+for a in range(1,10,1):
+
+    num=float(input(f"Entre com {1}° numero: "))
+    while(num<=0):
+        num=float(input(f"Entre com {2}° numero maior do que O: "))
+    print("Raiz quadrada: ",math.pow(num,1/2))"""
+
+#algoritmo 275 Criar um algoritmo que leia vários números inteiros e apresente o fatorial de cada 
+#número. O algoritmo se encerra quando se digita um número menor do que 1.
+
 #algoritmo 276
 #algoritmo 277
 #algoritmo 278
 #algoritmo 279
 #algoritmo 280
+
 #algoritmo 281
 #algoritmo 282
 #algoritmo 283

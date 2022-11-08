@@ -236,6 +236,138 @@ mf= (pr1 + pr2)/2
 print("MEdia trucada = ",float(mf - 0.5)+0.001)
 print("Media arredondada =",int(mf+0.001))"""
 
+#algoritmo 58
+"""from math import log
+
+xnum1 = float(input("Informe x1: "))
+xnum2 = float(input("Informe x2: "))
+xnum3 = float(input("Informe x3: "))
+
+x = xnum1 + (xnum2 / (xnum3 + xnum1)) + 2 * (xnum1 - xnum2) + log(64) / log(2)
+
+print("X = {:.2f}".format(x))"""
+#algoritmo 59
+"""import math
+
+co = float(input("Insira o cateto oposto: "))
+ca = float(input("Insira o cateto adjacente: "))
+
+hipotenusa = math.hypot(co, ca)
+
+print("A hipotenusa é {:.2f}".format(hipotenusa))"""
+
+#algoritmo 60
+"""pa = float(input("Insira o primeiro termo: "))
+razao = float(input("Insira a razão: "))
+
+dec = pa + 9 * razao
+
+print("O 10° termo desta P.A é : {:.2f}".format(dec))"""
+#algoritmo 61
+"""pg = float(input("Insira o primeiro termo: "))
+razao = float(input("Insira a razão: "))
+
+quinto = pg * razao ** 4
+
+print("O 5° termo desta P.G é: {:.2f}".format(quinto))
+#algoritmo 62
+produto = float(input("Insira o valor do produto: "))
+
+preco = produto - (produto * 9) / 100
+
+print("Preço com desconto: {:.2f}".format(preco))"""
+#algoritmo 63
+"""vahr = float(input("Informe o valor da hora-aula: "))
+quantidadeAulas = int(input("Informe o número de aulas dadas: "))
+percetualDesconto = int(input("Informe o percentual de desconto do INSS: "))
+
+valor = vahr * quantidadeAulas
+salarioLiquido = valor - (valor * percetualDesconto) / 100
+
+print("Salário líquido: R${:.2f}".format(salarioLiquido))"""
+#algoritmo 64
+"""celcius = float(input("Informe a temperatura em C°: "))
+
+f = (9 * celcius + 160) / 5
+
+print("O valor da temperatura {:.2f}C° em fahrenheit é {:.2f}F°".format(celcius, f))"""
+#algoritmo 65
+"""from cmath import pi
+
+raio = float(input("Informe o raio da lata de óleo: "))
+altura = float(input("Informe a altura da lata de óleo: "))
+
+volume = pi * raio**2 * altura
+
+print("O volume da lata é {:.2f}".format(volume))"""
+#algoritmo 66
+"""velocidade = int(input("Informe a velocidade média: "))
+tempo = int(input("Informe o tempo gasto em horas: "))
+
+distancia = velocidade * tempo
+litro = distancia / 12
+
+print("A velocidade média é {}km, o tempo gasto na viagem foi de {}h, a distância percorrida foi de {}km e a quantidade de combustível gasto foi de {:.2f} litros".format(velocidade, tempo, distancia, litro))"""
+#algoritmo 67
+"""valor = float(input("Informe o valor da prestação: "))
+taxa = float(input("Informe a taxa da prestação: "))
+tempo = int(input("Informe o tempo de atraso(em meses): "))
+
+prest = valor + ((valor * taxa) / 100) * tempo
+
+print("O valor da prestação é de R${:.2f}".format(prest))"""
+#algoritmo 68
+"""a = int(input("Informe valor de A: "))
+b = int(input("Informe valor de B: "))
+
+n1 = b
+b = a
+
+print("A = {}, B = {}".format(n1, b))"""
+#algoritmo 69
+"""numerador = float(input("Informe o numerador: "))
+denominador = float(input("Informe o denominador: "))
+
+dec = numerador / denominador
+
+print("O valor da fração em decimal é {:.2f}".format(dec))"""
+#algoritmo 70
+"""valor = float(input("Informe o valor da conta: "))
+
+newvalor = valor + (valor * 10) / 100
+
+print("O valor total da conta com a gorjeta será de R${}".format(newvalor))"""
+#algoritmo 71
+"""hora = int(input("Informe a hora atual: "))
+minuto = int(input("Informe o minutos: "))
+
+tminuto = hora * 60 + minuto
+
+print("Já se passaram {} minutos".format(tminuto))"""
+#algoritmo 72
+"""deposito = float(input("Informe o valor do depósito: "))
+juros = float(input("Informe a taxa de juros: "))
+
+valorTotal = deposito + (deposito * juros) / 100
+
+print("O valor total depois do rendimento é R${}".format(valorTotal))"""
+#algoritmo 73
+"""from math import trunc
+
+num = float(input("Digite um número real: "))
+
+print("Parte inteira: {}".format(trunc(num)))
+print("Parte fracionária: {}".format(num % (trunc(num))))
+print("Número arredondado: {}".format(round(num)))"""
+
+#algoritmo 74
+"""salMin = float(input("Informe o valor do salário minimo: "))
+salPess = float(input("Informe o valor do salario da pessoa: "))
+
+total = salPess / salMin
+
+print("A pessoa ganha {:.2f} salários minimos!".format(total))"""
+
 #algoritmo 75 Criar um algoritmo que leia o peso de uma pessoa, só a parte inteira, calcular e
 """imprimir:
 o peso da pessoa em gramas
@@ -868,16 +1000,27 @@ else:
     else:
         print(nome," ",media,"PF")"""
 
-#[tem que terminar] algoritmo 128 Entrar com um verbo no infinitivo e imprimir uma das mensagens:  verbo não está no infinitivo
+#algoritmo 128 Entrar com um verbo no infinitivo e imprimir uma das mensagens:  verbo não está no infinitivo
 # verbo da 1 conjugação
 # verbo da 2 conjugação
 # verbo da 3 conjugação
-"""verbo = str(input("Digite um verbo"))
+"""verbo = input("Digite um verbo: ")
 letra = verbo[-1]
-print(letra)
-if(letra=="R" or letra=="r"):
-    n=verbo[-2]
-    letr=verbo[]"""
+fin = verbo[-2:]
+if(letra == "R" or letra == "r"):
+    if(fin == 'ar' or fin == "AR"):
+        print("verbo da 1° conjugação")
+    
+    elif(fin == 'er' or fin == "ER"):
+        print("verbo da 2° conjugação")
+        
+    elif(fin == "ir" or fin == "IR"):
+        print("Verbo da 3° conjugação")
+    else:
+        print("Não existe verbo com terminação ur")
+else:
+    print("Não é um verbo no infinitivo")"""
+    
 
 #algoritmo 129 Entrar com o salário de uma pessoa e imprimir o desconto do INSS segundo a tabela a seguir
 #menor ou igual a R$ 600,00 isento 
@@ -1023,7 +1166,7 @@ else:
                 else:
                     print("\n",nome," pagara R$400,00")"""
 
-#algoritmo 137 Ler três valores inteiros (variáveis a, b e c) e efetuar o cálculo da equação de segundo grau, apresentando: as duas raízes, separa os valores informados for pos- sívelfazero cálculo (deita positivo ou zero); a mensagem "Não há raízes reais", se 
+#algoritmo 137 Ler três valores inteiros (variáveis a, b e c) e efetuar o cálculo da equação de segundo grau, apresentando: as duas raízes, separa os valores informados for pos- sívelfazero cálculo (deita positivo ou zero); a mensagem "Não há raízes reais", se 
 #não for possível fazer o cálculo (deita negativo); e a mensagem "Não é equação 
 #do segundo grau", se o valor de a for iguala zero. 
 """import math
@@ -1156,26 +1299,17 @@ if(soma>100):
 else:
     print("Equipe desclassificada!")"""
 
-# {EERO} algoritmo 143 Criar um algoritmo que verifique a(s) letra(s) central(is) de uma palavra Se o numero de caracteres for ímpar, ele verifica se a letra central é uma vogal; caso cont
+#algoritmo 143 Criar um algoritmo que verifique a(s) letra(s) central(is) de uma palavra Se o numero de caracteres for ímpar, ele verifica se a letra central é uma vogal; caso cont
 """
-pal=input("Digite uma palavra: ")
-if(pal %2 ==0):
-    n1 = pal /2
-    n2 = n1-1
-    p1 = pal[n1]
-    p2 = pal[n2]
-    p3 = p2[p1]
-    if(p3 == "rr" or p3=="ss"):
-        print("E rr OU ss")
-    else:
-        print("NAO e rr OU ss")
+ppalavra = input("Informe uma palavra: ")
+
+contagem = len(palavra)
+
+if(contagem % 2 == 0):
+    print('Par')
+
 else:
-    n1 = pal /2
-    p1=pal[n1]
-    if(p1=="a" or p1=="e" or p1 =="i" or p1=="o" or p1=="u"):
-        print("E VOGAL")
-    else:
-        print("NAO E VOGAL")"""
+    print('Ímpar')"""
 
 #algoritmo 144 O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de 
 #acordo com o saldo médio no último ano. Fazer um algoritmo que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. 
@@ -1588,13 +1722,33 @@ while(L<=8):
             print("\t")"""
  
 #algoritmo 168 
-"""L=1;t=1
-print("\nDIAGONAL PRINCIPAL\n")
-while(L<=10):
-    L+=1
-    print(L,"-",L,"\n") 
-    while(t<=L):
-        t+=1;print("\t") """ 
+"""import pandas as pd
+
+
+ordem = 10
+
+matriz: str = ([[0 for x in range(ordem)] for x in range(ordem)])
+
+for i in range(ordem):
+    for j in range(ordem):
+      if i == j:
+        matriz[i][j] = i+1, j+1
+
+
+print("Com Pandas")        
+
+df = pd.DataFrame(matriz)
+print(df)
+
+print("")
+print("Maneira antiga")
+for i in range(1, 11):
+    print("\n")
+    for j in range(1, 11):
+        if i == j:
+          print(f"{i}-{j}  ", end='  ')
+        else:
+            print("  ", end="   ") """
 
 #algoritmo 169
 """L=1;c=0
@@ -1873,6 +2027,549 @@ while(i<=f):
     i+=6"""
     
 #algoritmo 200 Criar um algoritmo que leia os limites inferior e superior de um intervalo e o número cujos múltiplos se deseja que sejam impressos no intervalo aberto. Suponha que os dados digitados sãopara um intervalo crescente. E    
+"""superior = int(input("Digite o limite superior: "))
+inferior = int(input("Digite o limite inferior: "))
+intervalo = int(input("Digite o intervalo: "))
+
+mult = 0
+for i in range(inferior, superior + 1):
+    if(i % intervalo == 0):
+        print(i)"""
+
+#algoritmo 201  Criar um algoritmo que leia os limites inferior e superior de um intervalo e imprima todos os números pares no intervalo aberto e seu somatório. Suponha que os dados digitados são para um intervalo crescente. 
+"""superior = int(input("Digite o limite superior: "))
+inferior = int(input("Digite o limite inferior: "))
+intervalo = int(input("Digite o intervalo: "))
+
+soma = 0
+for i in range(inferior, superior + 1):
+    if(i % 2 == 1):
+        soma = soma + i       
+print(soma)"""
+#algoritmo 202 Criar um algoritmo que leia um número (num) da entrada e imprima os múltiplos de 3 e 5 ao mesmo tempo no intervalo de 1 a num. Exemplo
+""" num = int(input("Digite um número maior que 15: "))
+for i in range(1, num + 1):
+    if(i % 3 == 0 and i % 5 == 0):
+        print(i) """    
+
+#algoritmo 203 """ """ 
+"""num = int(input("Digite a quantidade de números: "))
+
+for i in range(1, num + 1):
+    n = int(input(f"Digite o {i}° número: "))
+    multi = n * 3
+    print(f"Multiplo: {multi}")
+     """ 
+
+#algoritmo 204 """ """ 
+"""num = int(input("Digite a quantidade de números: "))
+
+maior = 0
+for i in range(1, num + 1):
+    n = int(input(f"Digite o {i}° número: "))
+    if(n > maior):
+        maior = n
+print(maior)
+     """ 
+
+#algoritmo 205
+"""quant = int(input("Digite a quantidade de números: "))
+num = int(input("Digite um número: "))
+
+maior = num
+for i in range(1, quant + 1):
+    n = int(input(f"Digite o {i}° número: "))
+    if(n > maior):
+        maior = n
+print(f"Maior: {maior}")
+     """ 
+#algoritmo 206 
+"""quant = int(input("Digite a quantidade de números: "))
+num = int(input("Digite um número: "))
+
+maior = num
+menor = num
+for i in range(1, quant + 1):
+    n = int(input(f"Digite o {i}° número: "))
+    if(n > maior):
+        maior = n
+    elif(n < menor):
+        menor = n
+print(f"Maior: {maior}\nMenor: {menor}")
+     """
+
+#algoritmo 207
+"""n1 = int(input("Digite o multiplicando: "))
+n2 = int(input("Digite o multiplicador: "))
+
+soma = 0
+for i in range(1, n2):
+    soma = soma + n1
+
+print(f"Produto: {soma}")
+     """ 
+
+#algoritmo 208 " 
+"""for i in range(1, 11):
+    termo = i + i
+    print(f"{i}° termo é {termo}") """ 
+
+#algoritmo 209 
+"""t1 = int(input("Digite o 1° termo: "))
+t2 = int(input("Digite o 2° termo: "))
+n = int(input("Número de termos: "))
+
+aux = t1 + t2
+for i in range(aux, n + 1):
+    termo = aux + i
+    print(f"{i}° termo é {termo}") """
+
+#algoritmo 210 
+"""t1 = int(input("Digite o 1° termo: "))
+t2 = int(input("Digite o 2° termo: "))
+
+
+aux = t1 + t2
+for i in range(aux, 11):
+    if(i % 2 == 1):
+        termo = aux + i
+        print(f"{i}° termo é {termo}")
+    else:
+        termo = aux - i
+        print(f"{i}° termo é {termo}") """
+
+#algoritmo 211 
+"""for i in range(10, 101):
+    if(i % 10 != 0):
+        aux = i // 10
+        if(i % aux == 0):    
+            print(i) """
+
+#algoritmo 212 
+"""soma = 0
+for i in range(20):
+    quad = i**2
+    if(quad < 225):
+        soma = soma + i
+        print(soma) """
+
+#algoritmo 213 
+"""soma = 0
+for i in range(1,21):
+    nota = float(input(f"Informe a {i}° nota: "))
+    soma = soma + nota
+print("Média: {:.2f}".format(soma / 20)) """
+
+#algoritmo 214 
+"""soma = 0
+for i in range(1, 16):
+    nome = input("Informe seu nome: ")
+    pr1 = float(input("Informe sua 1° nota: "))
+    pr2 = float(input("Informe sua 2° nota: "))
+    media = (pr1 + pr2) / 2
+    print(f"Nome: {nome}, nota 1: {pr1}, nota 2: {pr2} e a média: {media}")
+    soma = soma + media
+print("Média da sala: {:.2f}".format(soma / 15)) """
+
+#algoritmo 215 
+"""num = int(input("Digite um número: "))
+
+for i in range(1, num):
+    if(num % i == 0):
+        print(i) """
+
+#algoritmo 216 
+"""soma = 0
+for i in range(1, 201):
+    num = int(input("Informe um número: "))
+    if(num % 2 == 0):
+        soma = soma + 1
+print("Pares: {}\nImpares:{}".format(soma, 200 - soma))
+"""
+
+#algoritmo 217 
+"""for i in range(1, 8):
+    nome = input("Digite seu nome: ")
+    quant = len(nome)
+    print(f"Esse nome tem {quant} letras") """
+
+#algoritmo 218 
+"""for i in range(1, 12):
+    nome = input("Digite seu nome: ")
+    prim = nome[0]
+    print(prim) """
+
+#algoritmo 219 
+"""vezes = int(input("Informe o números de vezes que deseja imprimir a palavra SOL: "))
+for i in range(1, vezes + 1):
+    print("Sol")  """
+
+#algoritmo 220 
+"""nome = input("Digite seu nome: ")
+
+vezes = len(nome)
+for i in range(vezes + 1):
+    i = nome
+    print(i) """
+
+#algoritmo 221 
+"""nome = input("Digite uma palavra: ")
+vezes = len(nome)
+for i in range(0, vezes):
+    print(nome[i]) """
+
+#algoritmo 222 
+"""nome = input("Digite uma palavra: ")
+
+vezes = len(nome)
+for i in range(1, vezes + 1):
+    print(nome[-i], end="") """
+
+#algoritmo 233 
+""" n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+
+if(n1 > n2):
+    for i in range(n2, n1 + 1):
+        print(i)
+else:
+    for i in range(n1, n2 + 1):
+        print(i)"""
+
+
+#algoritmo 234 
+"""for i in range(10):
+    nome = input("Digite seu nome: ")
+    salario = float(input("Digite o valor do seu salário bruto: "))
+    if(salario < 600):
+        print("Nome: {}\nSalário: {:.2f}".format(nome, salario))
+    elif(salario >= 600 and salario < 1500):
+        salario -= salario * 0.1
+        print("Nome: {}\nSalário: {:.2f}".format(nome, salario))
+    else:
+        salario -= salario * 0.15
+        print("Nome: {}\nSalário: {:.2f}".format(nome, salario)) """
+
+#algoritmo 235 
+"""maior = 0
+menor = -1
+
+for i in range(1, 11):
+    n = int(input(f"Digite o {i}° número: "))
+    if(n > maior):
+        maior = n
+        
+    else:
+        if(n < menor):
+            menor = n
+print("Maior:",maior)
+print("Menor:",menor)          """
+
+#algoritmo 236 
+"""termos = int(input("Digite um número: "))
+h = 0
+
+for i in range(1, termos):
+    h = (h + 1) / i
+    print(f"soma: {h:.2f}") """
+
+#algoritmo 237 
+"""termos = int(input("Digite um número: "))
+h = 0
+
+for i in range(1, termos):
+    if(i % 2 == 1):
+        h = (h + 1)/ i
+    else:
+        h = (h - 2)/ i
+    print(f"soma: {h:.2f}") """
+
+#algoritmo 238 Ler o numero de termos da serie (N) e imprimir o valor de 5 sendo
+"""h=0
+num=float(input("Digite numero: "))
+n=num
+for c in range(1,num+1):
+    h+=c/n
+    n-=-1
+print("Soma: ",h)"""
+
+#algoritmo 239 Implementar um algoritmo para calcular o valor de eX O valor de X devera ser digitado. O valor de eX será calculado pela soma dos 10 primeiros termos da serie a seguir
+"""fat=1
+x=0
+x=float(input("digite valor de x: "))
+soma=1.
+for c in range(1,9,+1):
+    fat=fat*c
+    soma=soma+x**c/fat
+print("valor de e elevado a ",x,": ",soma)"""
+
+#algoritmo 240 Implementar um algoritmo para calcular o sen(X). O valor de X deverá ser digitado em graus. O valor do seno de Xserá calculado pela soma dos 10 primeiros ter -mos da série a seguir:
+"""import math
+seno=0.;expden=1
+x=float(input("Digite valor de x: "))
+x*=math.pow(x,1/2)/180
+for c in range(1,10,+1):
+    fat=1
+    for d in range(1,expden,+1):
+        fat*=d
+        if(c%2==0):
+            seno = seno- x ** expden / fat
+        else:
+            seno = seno + x ** expden / fat
+        expden+=2
+print("seno",seno)"""
+            
+#algoritmo 241 riar um algoritmo que deixe escolher qual a tabuada de multiplicar que se deseja imprimir. 
+"""n=int(input("Qual tabuada: "))
+if(n>0):
+    print("TABUADA do ",n)
+    for c in range(1,10,+1):
+        print("\n3",c," ",3*c)"""
+
+#algoritmo 242 Criar um algoritmo que deixe escolher qual a tabuada de multiplicar que se deseja imprimir.
+"""n=int(input("qual tabuada? "))
+if(n>0):
+    print("TABUADA do ",n,)
+    for c in range(1,10,+1):
+        print(n," ",c," ",n*c)
+else:
+    print("Nao exite tabuada")"""
+#algoritmo 243 Entrar com uma mensagem e imprimir quantas letras A E / O e U tem esta mensagem (considerar minúscula e maiúscula)
+"""c=0;ce=0;ci=0;co=0;cu=0;ca=0
+msg=input("Digite uma mensagem: ")
+for L in range(msg[0],+1):
+    letra=msg[0]
+    if(letra=="a" or letra=="A"):
+        ca+=1
+    else:
+        if(letra=="e" or letra=="E"):
+            ce+=1
+            if(letra=="i" or letra=="I"):
+                ci+=1
+                if(letra=="o" or letra=="O"):
+                    co+=1
+                    if(letra=="u" or letra=="U"):
+                        cu+=1
+print("Total de letras A: ",ca)
+print("Total de letras E: ",ce)
+print("Total de letras I: ",ci)
+print("Total de letras O: ",co)
+print("Total de letras U: ",cu)"""
+                
+#algoritmo 244 Entrar com uma mensagem e criptogra fá-Ia da seguinte maneira:
+"""msg=input("Digite uma mensagem: ")
+for L in range(0,msg[0],+1):
+    letra=msg[0]
+    if(letra=="a" or letra=="A"):
+        print("X")
+    else:
+        if(letra=="e" or letra=="E"):
+            print("W")
+        else:
+            if(letra=="o" or letra=="O"):
+                print("K")
+            else:
+                if(letra=="u" or letra=="U"):
+                    print(letra)"""
+
+#algoritmo 245 Criar um algoritmo que receba a idade e o peso de 20 pessoas. Calcular e imprimir 
+#as médias dos pesos das pessoas da mesma faixa etária. As faixas etárias são: de 1 
+#a 10 anos, de 11 a 20 anos, de 21 a 30 anos e maiores de 30 anos. 
+"""p1 =0.; p2=0.; p3 =0.; p4 =0.; c1=0; c2=0; c3=0; c4=0
+for l in range(1,21,1):
+    idade=float(input("Digite a idade: "))
+    peso=float(input("Digite o peso: "))
+    if(idade<=10):
+        c1+=1;p1+=peso
+    else:
+        if(idade<=20):
+            c2+=1;p2+=peso
+        else:
+            if(idade<=30):
+                c3+=1;p3+=peso
+            else:
+                c4+=1;p4+=peso
+    if(c1!=0):
+        print("Media dos pesos 1-10: ",p1/c1)
+    else:
+        print("Ninguem com idades de 1-10")
+        if(c2!=0):
+            print("Media dos pesos 11-20")
+        else:
+            print("Ninguem com idades de 11-20")
+        if(c3!=0):
+            print("Ninguem com idades de 11-20")
+        else:
+            print("Ninguem com idades de 21_301")
+        if(c4!=0):
+            print("Media dos pesos maiores que 30: ")
+        else:
+            print("Ninguem com idades maiores que 30")"""
+
+#algoritmo 246 No dia da estréia do filme "Senhor dos Anéis 'Ç uma grande emissora de TV reali - zou uma pesquisa logo após o encerramento do filme. Cada espectador respondeu a um questionário no qual constava sua idade e a sua opinião em relação ao 
+#filme: excelente -3; bom -2; regular- 1. Criar um algoritmo que receba a idade 
+#e a opinião de 20 espectadores, calcule e imprima:
+"""idadegot = 0; opexc = 0; opbom = 0; opregular = 0
+for i in range(1,15,1):
+    idade=float(input("Digite idade: "))
+    op=float(input("Digite opiniao: excelente - 3; bom - 2; regular - 1: "))
+    if(op==3):
+        opexc+=1
+        idadegot+=idade
+    else:
+        if(op==1):
+            opregular+=1
+        else:
+            if(op==2):
+                opbom+=1
+if(opexc!=0):
+    print("Media de idade das pessoas que responderam excelente:",idadegot/ opexc)
+else:
+    print("Ninguem que tenha escolhido excelente")
+if(opregular!=0):
+    print("Quantidade de pessoas que responderam regular:")
+else:
+    print("Ninguem que tenhaescolhido regular")
+if(opbom!=0):
+    print("A porcentagem das pessoas que respondeu bom: ",opbom*100/15)
+else:
+    print("Ninguem que tenha escolhido bom")"""
+
+#algoritmo 247 Num campeonato europeu de volleyball, se inscreveram 30 países. Sabendo-se 
+#que na lista oficial de cada país consta, além de outros dados, peso e idade de 12 
+#jogadores criar um algoritmo que apresente as seguintes informações 
+# o peso médio e a idade média de cada um dos times; 
+# o peso medio e a idade media de todos os participantes
+"""totpeso=0;totid=0
+for i in range(1,31,1):
+    somapeso=0;somaid=0
+    for x in range(1,12,1):
+        peso=float(input("Digite peso: "))
+        id=float(input("Digite idade: "))
+        somapeso+=peso ; somaid+=id
+    print("peso medio do tme: ",somapeso/12)
+    print("idade media do time: ",somaid/12)
+    totpeso+=somapeso; totid+=somaid
+print("peso medio de todos os times: ",totpeso/360)
+print("idade medio de todos os times: ",totid/360)"""
+
+#algoritmo 248
+#algoritmo 249
+#algoritmo 250 imprimir todas as tabuadas de multiplicar de 1 ate 10
+"""for L in range(1,10,1):
+    print("TABUADA DO ",L)
+    for c in range(1,10,1):
+        r=input("Pressione entre: ")"""
+
+#algoritmo 251 Criar um algoritmo para imprimir uma tabela para DEZ times num torneio de rodada dupla
+"""for L in range(1,10,1):
+    for c in range(1,10,1):
+        if(L!=c):
+            print("time:",L," time:",c,"_______")
+    r=input("Pressione entre: ")"""
+
+#algoritmo 252 Criar um algoritmo para imprimir uma tabela para DEZ times num torneio de rodada simples. 
+"""for L in range(1,9,1):
+    for c in range(1,10,1):
+        print("ime : ",L, " time : ", c, " ";)
+        r=input("Pressione entre: ")"""
+
+#algoritmo 253 Criar um algoritmo que entre com dez mensagens, e, para cada mensagem, imprimir quantas letras A tem (considerar maiúsculas e minúscula
+"""for i in range(10):
+    ca=0
+    msg=input("Digite uma mensagem: ")
+    for c in range(0, len(msg)):
+        letra=msg[c]
+        if(letra=="a" or letra=="A"):
+            ca+=1
+    print("Total de letras a: ",ca)"""
+
+#algoritmo 254 Criar um algoritmo que entre com dez notas de cada aluno de uma turma de 20 alunos e imprima: 
+# a média de cada aluno 
+# a média da turma 
+# o percentual de alunos que tiveram medias maiores ou iguais a 5.0. 
+"""somat=0
+cap=0
+for L in range(1,20,1):
+    somaa=0
+    for c in range(1,10,1):
+        nota=int(input("Digite ", c,"a nota do aluno ",L,))
+        somaa+=nota
+    media=somaa/10
+    if(media>=5):"""
+#algoritmo 255
+
+#algoritmo 256
+#algoritmo 257 Criar um algoritmo que leia o valor de N imprima a sequência a seguire o resultado
+"""y=int(input("Digite o numero de termos: "))
+soma=0;c=0;s=1
+for L in range(y,0,-1):
+    fat=1
+    for z in range(1,L,1):
+        fat1=1
+        for z in range(1,c,1):
+            fat1*=z
+            if(s==1):
+                print(L,"/",c^2,"! -",soma=soma+fat/(fat1^2))
+                s=0
+            else:
+                print(L,"/",c^2,"! -",soma=soma-fat/(fat1^2))
+                s=1
+            c+=2"""
+
+#algoritmo 258
+#algoritmo 259
+#algoritmo 260
+#algoritmo 261
+#algoritmo 262
+#algoritmo 263
+#algoritmo 264
+#algoritmo 265
+
+#algoritmo 266 Entrar com nomes enquanto forem diferentes de FIM e imprimir o primeiro caractere de cada nome.
+"""nome=input("Digite nime ou FIM para terminar: ")
+while(nome != "FIM" or nome !="fim" or nome!="Fim"):
+    print(nome)
+    nome=input("Digite nime ou FIM para terminar: ")"""
+
+#algoritmo 267
+"""prof=input("Digite profissao ou FIm para sair: ")
+a=0
+while(prof != "FIM" and prof != "Fim" and prof != "fim"):
+    if(prof=="DENTISTA" or prof=="Dentista" or prof=="dentista"):
+        a+=1
+    prof=input("Digite profissao ou FIm para sair: ")
+print("total de dentista: ",a)"""
+#algoritmo 268
+#algoritmo 269
+#algoritmo 270
+#algoritmo 271
+#algoritmo 272
+#algoritmo 273
+#algoritmo 274
+#algoritmo 275
+#algoritmo 276
+#algoritmo 277
+#algoritmo 278
+#algoritmo 279
+#algoritmo 280
+#algoritmo 281
+#algoritmo 282
+#algoritmo 283
+#algoritmo 284
+#algoritmo 285
+#algoritmo 286
+#algoritmo 287
+#algoritmo 288
+#algoritmo 289
+#algoritmo 290
+#algoritmo 291
+#algoritmo 292
+#algoritmo 293
+#algoritmo 294
+#algoritmo 295
+#algoritmo 296
+#algoritmo 297
 
 #algoritmo 298 Numa universidade, os alunos das turmas de informática fizeram uma prova de
 """algoritmos. Cada turma possui um número de alunos. Criar um algoritmo que im-prima:
@@ -1907,7 +2604,6 @@ while(a <= nt):
     a+=1
 print("Foram aprovados ", apor," alunos.")
 print("\nPercentual de alunos reprovados: ",(r/contap)*100,"%")"""
-
 
 #algoritmo 299 Os alunos de informática tiveram cinco provas: 1, 2, 3, 4 e 5. Criar um algoritmo que imprima:
 """
@@ -2124,6 +2820,26 @@ print("total de dinheiro em banco : ", tot)
 print(maiorcod, " E o codigo do cliente com maior saldo: ", maior)"""
     
 #algoritmo 306  A TELEMAR deseja calcular as contas telefônicas de seus assinantes através do computador. 
+#algoritmo 307
+#algoritmo 308
+#algoritmo 309
+#algoritmo 310
+#algoritmo 311
+#algoritmo 312
+#algoritmo 313
+#algoritmo 314
+#algoritmo 315
+#algoritmo 316
+#algoritmo 317
+#algoritmo 318
+#algoritmo 319
+#algoritmo 320
+#algoritmo 321
+#algoritmo 322
+#algoritmo 323
+#algoritmo 324
+
+
 
 
     

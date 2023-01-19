@@ -2,16 +2,15 @@
 # Livro para treinar programação 
 <br>
  <h1>Esse livro conta com 500 execicios para vc treinar programação.</h1>
- <li>https://drive.google.com/file/d/1_gB8UlQjgBfdN-_fgivPnFqd4rTHk7O9/view </li>
- 
+ <h1>=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</h1>
  <li> Como estudar </li>
   <p>  primeiro voce deve escolher uma linguagem para treinar  </p>
-  <p>  Depois e so voce tentar resolver os execicios do livros vai </p>
-  <p>  fazendo com calma tenta fazer 20 por dia ou mais se conseguir </p>
+  <p>  Depois e so você tentar resolver os execicios do livros vai com a linguagem que você escolheu</p>
+  <p>  fazendo com calma tenta fazer 20 questoes por dia ou mais se conseguir </p>
   <p>  O w3schools e um site para voce treinar e estudar programacao que eu tbm recomento muito </p>
   <h1>Link do site  </h1>
   https://www.w3schools.com/ 
-   <h1>Link para baixar o livro </h1>
+  <h1>Link para baixar o livro </h1>
   https://drive.google.com/file/d/1_gB8UlQjgBfdN-_fgivPnFqd4rTHk7O9/view
 <br>
 <br>

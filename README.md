@@ -2,7 +2,7 @@
 # Livro para treinar programação 
 <br>
  <h1>Esse livro conta com 500 execicios para vc treinar programação.</h1>
- <h1>=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=</h1>
+ <h1>=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-</h1>
  <li> Como estudar </li>
   <p>  primeiro voce deve escolher uma linguagem para treinar  </p>
   <p>  Depois e so você tentar resolver os execicios do livros vai com a linguagem que você escolheu</p>

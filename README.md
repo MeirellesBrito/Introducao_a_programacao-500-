@@ -5,9 +5,9 @@
  <h1>=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-</h1>
  <li> Como estudar </li>
   <p>  primeiro voce deve escolher uma linguagem para treinar  </p>
-  <p>  Depois e so você tentar resolver os execicios do livros vai com a linguagem que você escolheu</p>
-  <p>  fazendo com calma tenta fazer 20 questoes por dia ou mais se conseguir </p>
-  <p>  O w3schools e um site para voce treinar e estudar programacao que eu tbm recomento muito </p>
+  <p>  Depois e so você tem que tentar resolver os execicios do livros com a linguagem que você escolheu</p>
+  <p>  vai fazendo com calma tenta fazer 20 questoes por dia ou mais se conseguir </p>
+  <p>  O w3schools e um site otimo site para voce treinar e estudar programacao </p>
   <h1>Link do site  </h1>
   https://www.w3schools.com/ 
   <h1>Link para baixar o livro </h1>

@@ -9,8 +9,10 @@
   <p>  Depois e so voce tentar resolver os execicios do livros vai </p>
   <p>  fazendo com calma tenta fazer 20 por dia ou mais se conseguir </p>
   <p>  O w3schools e um site para voce treinar e estudar programacao que eu tbm recomento muito </p>
-  https://www.w3schools.com/          <h1>Link do site  </h1>
-  https://drive.google.com/file/d/1_gB8UlQjgBfdN-_fgivPnFqd4rTHk7O9/view <h1>Link para baixar o livro </h1>
+  <h1>Link do site  </h1>
+  https://www.w3schools.com/ 
+   <h1>Link para baixar o livro </h1>
+  https://drive.google.com/file/d/1_gB8UlQjgBfdN-_fgivPnFqd4rTHk7O9/view
 <br>
 <br>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------
